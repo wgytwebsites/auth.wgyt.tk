@@ -12,13 +12,15 @@ app.get('/', (req, res) => {
       userid: req.get('X-Replit-User-Id'),
       username: req.get('X-Replit-User-Name'),
       userroles: req.get('X-Replit-User-Roles'),
-      url: req.get('Redirect URL')
+			url: req.query.url
     });
 	} else {
     // Log-in prompt.
 		res.sendFile(__dirname+"/new.html");
 	}
 });
-
+app.get('/welcome.js', (req, res) => {
+	res.sendFile(__dirname+"/welcome.js");
+});
 /// Listening */
 app.listen(8080);

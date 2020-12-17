@@ -6,5 +6,8 @@
   <body>
     <h1>Hello {{username}}!</h1>
     <p>Roles: {{userroles}}, ID: {{userid}}</p>
+		<p>Redirecting to {{url}}</p>
+    <script>
+window.location.assign("https://{{url}}?id={{userid}}'&name={{username}}&roles={{userroles}}")</script>
   </body>
 </html>
