@@ -20,7 +20,7 @@ app.get('/repl', (req, res) => {
       userid: req.get('X-Replit-User-Id'),
       username: req.get('X-Replit-User-Name'),
       userroles: req.get('X-Replit-User-Roles'),
-			url: url
+			url: req.query.url
     });
 	} else {
     // Log-in prompt.
