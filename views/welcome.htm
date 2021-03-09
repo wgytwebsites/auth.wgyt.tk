@@ -138,6 +138,6 @@ disabled {
     <h2>Hello {{username}}!</h2>
     <p>Roles: {{userroles}}, ID: {{userid}}</p>
 		<p>Redirecting to <a href="{{url}}">{{url}}</a></p>
-    <meta http-equiv="refresh" content="1;url=https://{{url}}/auth/callback/?id={{userid}}&name={{username}}&roles={{userroles}}" />
+    <meta http-equiv="refresh" content="1;url=https://{{url}}/auth/callback/?data={{encrypted}}" />
   </body>
 </html>
